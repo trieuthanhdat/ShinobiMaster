@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 649429c483b24962bb71203933c6f23c, type: 3}
+  m_Name: Viking
+  m_EditorClassIdentifier: 
+  <Id>k__BackingField: 15
+  <Name>k__BackingField: Viking
+  <SkinPrefab>k__BackingField: {fileID: 919132149155446097, guid: 9469811e1aa238646b1be9ad4e52d511,
+    type: 3}
+  <Sprite>k__BackingField: {fileID: 21300000, guid: 1b6b6dc9339b49f47b982b645f61f518,
+    type: 3}
+  <NotAvailableSprite>k__BackingField: {fileID: 21300000, guid: fa1af464e6b58044ba66db8883e14128,
+    type: 3}
+  <Available>k__BackingField: 0
+  <Skipped>k__BackingField: 0
+  <ForAds>k__BackingField: 1
+  <NeedViewCount>k__BackingField: 3
+  <CurrentViewCount>k__BackingField: 0
+  <ForCoins>k__BackingField: 0
+  <Price>k__BackingField: 0
+  <SkinMat>k__BackingField: {fileID: 2100000, guid: 0ce2c3c9057fde14eb5287dffb64b5f2,
+    type: 2}
+  <IconSprite>k__BackingField: {fileID: 21300000, guid: 4f4003fef47a5844d8b97bf32af575d9,
+    type: 3}

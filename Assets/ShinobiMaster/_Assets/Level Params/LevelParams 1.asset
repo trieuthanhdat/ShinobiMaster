@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68efbac19c244f97ac452810e4ec5190, type: 3}
+  m_Name: LevelParams 1
+  m_EditorClassIdentifier: 
+  LevelMenuBackground: {fileID: 21300000, guid: 9ed14e19f9bed524e85a24d728387655,
+    type: 3}
+  LevelMenuColor: {r: 0.19607843, g: 0.14901961, b: 0.23921569, a: 1}
+  FogColor: {r: 0.85882354, g: 0.6862745, b: 0.6862745, a: 1}
+  StageColorScheme: {fileID: 11400000, guid: 4c6116b8f7d524341993f73391759fd0, type: 2}
+  Stages:
+  - {fileID: 7716150542792855028, guid: fa62ec82994caef4b9b6f399a1c3ef1e, type: 3}
+  - {fileID: 7716150542792855028, guid: 15079584d3358604ba8ff53989c9adee, type: 3}
+  - {fileID: 7716150542792855028, guid: 2bbaba26ec8d56e48a4d419b02ca140a, type: 3}
+  - {fileID: 7716150542792855028, guid: 47cae7188fb0e804d86f7d8c9172520e, type: 3}
+  - {fileID: 7716150542792855028, guid: 74e9585aa6e2a604b935f312e6072e6d, type: 3}
+  - {fileID: 7716150542792855028, guid: 6207864d534222b4a9e6e44afd6b76f4, type: 3}
+  - {fileID: 7716150542792855028, guid: ec2ed2d1e092f5b48bd540892eafddc9, type: 3}
+  - {fileID: 7716150542792855028, guid: a625a14fdc469944890a913fc1d465da, type: 3}

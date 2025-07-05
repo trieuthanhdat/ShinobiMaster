@@ -1,0 +1,71 @@
+{
+	"StagesDialogueData":
+	[
+		{
+			"Level": "1",
+			"Stage": "1",
+			"Replicas":
+			[
+				{"Author": "Player", "Text" : "You think you can run?"},
+				{"Author": "Boss", "Text" : "A! U still alve, little idiot!"},
+				{"Author": "Player", "Text" : "To your regret!"},
+				{"Author": "Boss", "Text" : "I will fix that soon!"}
+			]
+		},
+		{
+			"Level": "1",
+			"Stage": "8",
+			"Replicas":
+			[
+				{"Author": "Player", "Text" : "You can't run forever!"},
+				{"Author": "Boss", "Text" : "I'm not going to."},
+				{"Author": "Player", "Text" : "..."},
+				{"Author": "Boss", "Text" : "Prepare to die, little bastard!"}
+			]
+		},
+		{
+			"Level": "2",
+			"Stage": "1",
+			"Replicas":
+			[
+				{"Author": "Player", "Text" : "Stop running from me!"},
+				{"Author": "Boss", "Text" : "Your vengance is pointless!"},
+				{"Author": "Player", "Text" : "It's too late for excuses!"},
+				{"Author": "Boss", "Text" : "We will see!"}
+			]
+		},
+		{
+			"Level": "2",
+			"Stage": "8",
+			"Replicas":
+			[
+				{"Author": "Player", "Text" : "You can't run forever!"},
+				{"Author": "Boss", "Text" : "I'm not going to."},
+				{"Author": "Player", "Text" : "..."},
+				{"Author": "Boss", "Text" : "Prepare to die, little bastard!"}
+			]
+		},
+		{
+			"Level": "3",
+			"Stage": "1",
+			"Replicas":
+			[
+				{"Author": "Player", "Text" : "Gotcha!"},
+				{"Author": "Boss", "Text" : "You already lost."},
+				{"Author": "Player", "Text" : "Yeah, keep comforting yourself."},
+				{"Author": "Boss", "Text" : "Arrrrr!"}
+			]
+		},
+		{
+			"Level": "3",
+			"Stage": "8",
+			"Replicas":
+			[
+				{"Author": "Player", "Text" : "You can't run forever!"},
+				{"Author": "Boss", "Text" : "I'm not going to."},
+				{"Author": "Player", "Text" : "..."},
+				{"Author": "Boss", "Text" : "Prepare to die, little bastard!"}
+			]
+		}
+	]
+}

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f590800ef7244ab9602476dd15df844, type: 3}
+  m_Name: PirateSaber
+  m_EditorClassIdentifier: 
+  <Id>k__BackingField: 14
+  <Name>k__BackingField: PirateSaber
+  <SkinPrefab>k__BackingField: {fileID: 919132149155446097, guid: c549cfdbd72482643a89b0942b898c7a,
+    type: 3}
+  <Sprite>k__BackingField: {fileID: 21300000, guid: c99e9b3e111fbba4f8f26bede6092326,
+    type: 3}
+  <NotAvailableSprite>k__BackingField: {fileID: 21300000, guid: 25dfbc21924d108479da19c44c3ae443,
+    type: 3}
+  <Available>k__BackingField: 0
+  <Skipped>k__BackingField: 0
+  <ForAds>k__BackingField: 0
+  <NeedViewCount>k__BackingField: 0
+  <CurrentViewCount>k__BackingField: 0
+  <ForCoins>k__BackingField: 1
+  <Price>k__BackingField: 6500
+  <VFXPrefab>k__BackingField: {fileID: 8727034169974219799, guid: 3640a8b8b9badcb469318e2ec9247dc7,
+    type: 3}

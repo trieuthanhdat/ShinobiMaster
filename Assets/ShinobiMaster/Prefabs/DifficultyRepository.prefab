@@ -1,0 +1,146 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8210481992684133455
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3403671160912531680}
+  - component: {fileID: 5639752795249277345}
+  m_Layer: 0
+  m_Name: DifficultyRepository
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3403671160912531680
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8210481992684133455}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5639752795249277345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8210481992684133455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 112022dd0c094cd8bb97c6cce8d2b023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <DifficultyConfigs>k__BackingField:
+  - AttackSpeed: 2
+    ProjectileVelocity: 24
+    StartAttackDelay: {x: 2, y: 3.2}
+    SlowTimeScale: 0.105
+    AttackCancellationRadius: 3.5
+  - AttackSpeed: 2
+    ProjectileVelocity: 24
+    StartAttackDelay: {x: 1.9, y: 3.15}
+    SlowTimeScale: 0.105
+    AttackCancellationRadius: 3.4
+  - AttackSpeed: 2
+    ProjectileVelocity: 24
+    StartAttackDelay: {x: 1.8, y: 3.1}
+    SlowTimeScale: 0.105
+    AttackCancellationRadius: 3.3
+  - AttackSpeed: 2
+    ProjectileVelocity: 24
+    StartAttackDelay: {x: 1.7, y: 3}
+    SlowTimeScale: 0.105
+    AttackCancellationRadius: 3.2
+  - AttackSpeed: 2
+    ProjectileVelocity: 24
+    StartAttackDelay: {x: 1.5, y: 2.95}
+    SlowTimeScale: 0.105
+    AttackCancellationRadius: 3.1
+  - AttackSpeed: 2
+    ProjectileVelocity: 24
+    StartAttackDelay: {x: 1.3, y: 2.9}
+    SlowTimeScale: 0
+    AttackCancellationRadius: 3
+  - AttackSpeed: 2
+    ProjectileVelocity: 24
+    StartAttackDelay: {x: 1.1, y: 2.8}
+    SlowTimeScale: 0.105
+    AttackCancellationRadius: 2.9
+  - AttackSpeed: 2
+    ProjectileVelocity: 24
+    StartAttackDelay: {x: 1.05, y: 2.7}
+    SlowTimeScale: 0.105
+    AttackCancellationRadius: 2.8
+  - AttackSpeed: 2
+    ProjectileVelocity: 24
+    StartAttackDelay: {x: 1, y: 2.6}
+    SlowTimeScale: 0.105
+    AttackCancellationRadius: 2.7
+  - AttackSpeed: 2
+    ProjectileVelocity: 24
+    StartAttackDelay: {x: 0.95, y: 2.5}
+    SlowTimeScale: 0.105
+    AttackCancellationRadius: 2.6
+  - AttackSpeed: 2
+    ProjectileVelocity: 24
+    StartAttackDelay: {x: 0.9, y: 2.4}
+    SlowTimeScale: 0.105
+    AttackCancellationRadius: 2.5
+  - AttackSpeed: 2
+    ProjectileVelocity: 24
+    StartAttackDelay: {x: 0.85, y: 2.3}
+    SlowTimeScale: 0.105
+    AttackCancellationRadius: 2.4
+  - AttackSpeed: 2
+    ProjectileVelocity: 24
+    StartAttackDelay: {x: 0.8, y: 2.2}
+    SlowTimeScale: 0.105
+    AttackCancellationRadius: 2.3
+  - AttackSpeed: 2
+    ProjectileVelocity: 24
+    StartAttackDelay: {x: 0.7, y: 1.8}
+    SlowTimeScale: 0.105
+    AttackCancellationRadius: 2.2
+  - AttackSpeed: 2
+    ProjectileVelocity: 24
+    StartAttackDelay: {x: 0.65, y: 1.7}
+    SlowTimeScale: 0.105
+    AttackCancellationRadius: 2.1
+  - AttackSpeed: 2
+    ProjectileVelocity: 24
+    StartAttackDelay: {x: 0.6, y: 1.6}
+    SlowTimeScale: 0.105
+    AttackCancellationRadius: 2
+  - AttackSpeed: 2
+    ProjectileVelocity: 24
+    StartAttackDelay: {x: 0.55, y: 1.5}
+    SlowTimeScale: 0.105
+    AttackCancellationRadius: 1.9
+  - AttackSpeed: 2
+    ProjectileVelocity: 24
+    StartAttackDelay: {x: 0.5, y: 1.4}
+    SlowTimeScale: 0.105
+    AttackCancellationRadius: 1.8
+  - AttackSpeed: 2
+    ProjectileVelocity: 24
+    StartAttackDelay: {x: 0.4, y: 1.35}
+    SlowTimeScale: 0.105
+    AttackCancellationRadius: 1.7
+  - AttackSpeed: 2
+    ProjectileVelocity: 24
+    StartAttackDelay: {x: 0.3, y: 1.3}
+    SlowTimeScale: 0.105
+    AttackCancellationRadius: 1.6

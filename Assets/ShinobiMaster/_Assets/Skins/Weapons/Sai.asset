@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f590800ef7244ab9602476dd15df844, type: 3}
+  m_Name: Sai
+  m_EditorClassIdentifier: 
+  <Id>k__BackingField: 7
+  <Name>k__BackingField: Sai
+  <SkinPrefab>k__BackingField: {fileID: 919132149155446097, guid: aa8657882c0d64b47adde2a70c5b138e,
+    type: 3}
+  <Sprite>k__BackingField: {fileID: 21300000, guid: fffe26dd50fb6eb40b51ad985698de98,
+    type: 3}
+  <NotAvailableSprite>k__BackingField: {fileID: 21300000, guid: 3e6347fd9d530194fa9e2aac920ed72a,
+    type: 3}
+  <Available>k__BackingField: 0
+  <Skipped>k__BackingField: 0
+  <ForAds>k__BackingField: 0
+  <NeedViewCount>k__BackingField: 0
+  <CurrentViewCount>k__BackingField: 0
+  <ForCoins>k__BackingField: 0
+  <Price>k__BackingField: 0
+  <VFXPrefab>k__BackingField: {fileID: 8727034169974219799, guid: 3640a8b8b9badcb469318e2ec9247dc7,
+    type: 3}

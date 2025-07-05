@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b842ee3bccf64350a798f3b46aa3c347, type: 3}
+  m_Name: City2ColorScheme
+  m_EditorClassIdentifier: 
+  WallstripesMat: {fileID: 2100000, guid: c63506bcbeba4054b83c7bd5f2cd2ffe, type: 2}
+  WallsMat: {fileID: 2100000, guid: 48105520ef371ec4a8afcc350a86962a, type: 2}
+  FloorMat: {fileID: 2100000, guid: 54ebb428dfeb5a34d9b7bdc5b2f51e52, type: 2}
+  ElevatorDoorsMat: {fileID: 2100000, guid: a81393edddc9831489e037319d16c66e, type: 2}
+  ElevatorFramesMat: {fileID: 2100000, guid: c63bf4e6c91e0744498262395c8d3042, type: 2}
+  BalksMat: {fileID: 2100000, guid: 05a247f622bcf5443b562651a2d9fbc1, type: 2}
+  BackgroundMat: {fileID: 2100000, guid: bc2e0578678a4c54594f4b2f012a3f70, type: 2}
+  SkyboxMat: {fileID: 2100000, guid: 2627c8a38fe4d034a8c0df427087fd6b, type: 2}

@@ -1,0 +1,192 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7318629979517524216
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1531521341809688595}
+  - component: {fileID: 5529695024911792893}
+  m_Layer: 0
+  m_Name: SkinRepository
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1531521341809688595
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7318629979517524216}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5529695024911792893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7318629979517524216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74c78b4bf6cd404b998c7bcbf9699b58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Skins: []
+  characterSkins:
+  - {fileID: 11400000, guid: 53a8ae6a373b79746826aa447e1fb8db, type: 2}
+  - {fileID: 11400000, guid: ecb340ea62cc3b141a7c54bb0e5ec925, type: 2}
+  - {fileID: 11400000, guid: 8ad0437618efbc34ca9203303f2e516e, type: 2}
+  - {fileID: 11400000, guid: 3cfa85c1adad57542b4935849d43af3b, type: 2}
+  - {fileID: 11400000, guid: 18274df9ec4c2534dba1a8fad473e3f6, type: 2}
+  - {fileID: 11400000, guid: 3ca2d77fb8e1b2543ab333d890ea31c7, type: 2}
+  - {fileID: 11400000, guid: 91345c15b632d0b49a376f6c93ceb238, type: 2}
+  - {fileID: 11400000, guid: 0c38ca909e1d93440a0529ed0ed53a34, type: 2}
+  - {fileID: 11400000, guid: ea5b7e9d2c497bd4286fd39213fa33ee, type: 2}
+  - {fileID: 11400000, guid: b96f92610804a934f82db9444cbd196f, type: 2}
+  - {fileID: 11400000, guid: 14f2cea9343bca2458440a6607993500, type: 2}
+  - {fileID: 11400000, guid: 27ea31d3d0268c54f80e153bf81c9fb9, type: 2}
+  - {fileID: 11400000, guid: a1cb3f35feace264abe2590750361398, type: 2}
+  - {fileID: 11400000, guid: baa9b43f19fcd8e45b98a936eeb3c869, type: 2}
+  - {fileID: 11400000, guid: 4448b4221e2b5854dac83429286023b6, type: 2}
+  - {fileID: 11400000, guid: cb38d0d0a891873469c939e00ada17da, type: 2}
+  - {fileID: 11400000, guid: ad6cff403a9951647afff8b473066871, type: 2}
+  - {fileID: 11400000, guid: bb613a802efb8764aae20c6c1c2e3162, type: 2}
+  defaultSkins:
+  - {fileID: 11400000, guid: 18274df9ec4c2534dba1a8fad473e3f6, type: 2}
+  - {fileID: 11400000, guid: 2533f00e5e0b9514aa6f13cab3fb6107, type: 2}
+  weaponSkins:
+  - {fileID: 11400000, guid: 528fd6ecb72ebb641ab0d5de46b92c1e, type: 2}
+  - {fileID: 11400000, guid: eb0ffc154cba9fc4ab8fa5b85215d861, type: 2}
+  - {fileID: 11400000, guid: 06fdf4d0c6792cb44aa82513897990fd, type: 2}
+  - {fileID: 11400000, guid: da1df842621f62d47a13474bf5540215, type: 2}
+  - {fileID: 11400000, guid: 33ae1e1f24f870e478cb8efc29eec87f, type: 2}
+  - {fileID: 11400000, guid: 2533f00e5e0b9514aa6f13cab3fb6107, type: 2}
+  - {fileID: 11400000, guid: c27d173d2f51b5941a9c9cf317c0702c, type: 2}
+  - {fileID: 11400000, guid: 1f6a977f9b42a704e97f34d27ad9c034, type: 2}
+  - {fileID: 11400000, guid: 3992a60d31ad9bf4296579addce68260, type: 2}
+  - {fileID: 11400000, guid: 1d23d8174a578c14a9e33953cf35b6d7, type: 2}
+  - {fileID: 11400000, guid: 2b42568cff543024fa7c3ab38103e9f2, type: 2}
+  - {fileID: 11400000, guid: 216816d4c46c74a499e9e90cb419e888, type: 2}
+  - {fileID: 11400000, guid: 5e12190e9dfbd284582923dc763b6dba, type: 2}
+  - {fileID: 11400000, guid: b50c163cec428fa4499f6ceaf1d92142, type: 2}
+  - {fileID: 11400000, guid: 7693177016bc1d745b081f6f40dfaa39, type: 2}
+  - {fileID: 11400000, guid: d25977f7b79c22c4396566d503967c34, type: 2}
+  - {fileID: 11400000, guid: 1bf1e054ebe60444194e9bf25384b8bb, type: 2}
+  - {fileID: 11400000, guid: 277bcc4a66e506e4b8554ef678c83bcb, type: 2}
+  SkinsOpenInfo:
+  - Level: 1
+    Stage: 3
+    Skin: {fileID: 11400000, guid: 1bf1e054ebe60444194e9bf25384b8bb, type: 2}
+  - Level: 1
+    Stage: 6
+    Skin: {fileID: 11400000, guid: 53a8ae6a373b79746826aa447e1fb8db, type: 2}
+  - Level: 2
+    Stage: 3
+    Skin: {fileID: 11400000, guid: c27d173d2f51b5941a9c9cf317c0702c, type: 2}
+  - Level: 2
+    Stage: 6
+    Skin: {fileID: 11400000, guid: 4448b4221e2b5854dac83429286023b6, type: 2}
+  - Level: 3
+    Stage: 3
+    Skin: {fileID: 11400000, guid: 216816d4c46c74a499e9e90cb419e888, type: 2}
+  - Level: 3
+    Stage: 6
+    Skin: {fileID: 11400000, guid: ecb340ea62cc3b141a7c54bb0e5ec925, type: 2}
+  - Level: 4
+    Stage: 3
+    Skin: {fileID: 11400000, guid: 1f6a977f9b42a704e97f34d27ad9c034, type: 2}
+  - Level: 4
+    Stage: 6
+    Skin: {fileID: 11400000, guid: bb613a802efb8764aae20c6c1c2e3162, type: 2}
+  - Level: 5
+    Stage: 3
+    Skin: {fileID: 11400000, guid: d25977f7b79c22c4396566d503967c34, type: 2}
+  - Level: 5
+    Stage: 6
+    Skin: {fileID: 11400000, guid: ea5b7e9d2c497bd4286fd39213fa33ee, type: 2}
+  - Level: 6
+    Stage: 3
+    Skin: {fileID: 11400000, guid: 2b42568cff543024fa7c3ab38103e9f2, type: 2}
+  - Level: 6
+    Stage: 6
+    Skin: {fileID: 11400000, guid: 91345c15b632d0b49a376f6c93ceb238, type: 2}
+  - Level: 7
+    Stage: 3
+    Skin: {fileID: 11400000, guid: b50c163cec428fa4499f6ceaf1d92142, type: 2}
+  - Level: 7
+    Stage: 6
+    Skin: {fileID: 11400000, guid: b96f92610804a934f82db9444cbd196f, type: 2}
+  - Level: 8
+    Stage: 3
+    Skin: {fileID: 11400000, guid: 33ae1e1f24f870e478cb8efc29eec87f, type: 2}
+  - Level: 8
+    Stage: 6
+    Skin: {fileID: 11400000, guid: a1cb3f35feace264abe2590750361398, type: 2}
+  - Level: 9
+    Stage: 3
+    Skin: {fileID: 11400000, guid: da1df842621f62d47a13474bf5540215, type: 2}
+  - Level: 9
+    Stage: 6
+    Skin: {fileID: 11400000, guid: 3cfa85c1adad57542b4935849d43af3b, type: 2}
+  - Level: 10
+    Stage: 3
+    Skin: {fileID: 11400000, guid: 06fdf4d0c6792cb44aa82513897990fd, type: 2}
+  - Level: 10
+    Stage: 6
+    Skin: {fileID: 11400000, guid: 27ea31d3d0268c54f80e153bf81c9fb9, type: 2}
+  - Level: 11
+    Stage: 3
+    Skin: {fileID: 11400000, guid: 528fd6ecb72ebb641ab0d5de46b92c1e, type: 2}
+  - Level: 11
+    Stage: 6
+    Skin: {fileID: 11400000, guid: 0c38ca909e1d93440a0529ed0ed53a34, type: 2}
+  - Level: 12
+    Stage: 3
+    Skin: {fileID: 11400000, guid: eb0ffc154cba9fc4ab8fa5b85215d861, type: 2}
+  - Level: 12
+    Stage: 6
+    Skin: {fileID: 11400000, guid: ad6cff403a9951647afff8b473066871, type: 2}
+  - Level: 13
+    Stage: 3
+    Skin: {fileID: 11400000, guid: 7693177016bc1d745b081f6f40dfaa39, type: 2}
+  - Level: 13
+    Stage: 6
+    Skin: {fileID: 11400000, guid: cb38d0d0a891873469c939e00ada17da, type: 2}
+  - Level: 14
+    Stage: 3
+    Skin: {fileID: 11400000, guid: 3992a60d31ad9bf4296579addce68260, type: 2}
+  - Level: 14
+    Stage: 6
+    Skin: {fileID: 11400000, guid: 14f2cea9343bca2458440a6607993500, type: 2}
+  - Level: 15
+    Stage: 3
+    Skin: {fileID: 11400000, guid: 1d23d8174a578c14a9e33953cf35b6d7, type: 2}
+  - Level: 15
+    Stage: 6
+    Skin: {fileID: 11400000, guid: 3ca2d77fb8e1b2543ab333d890ea31c7, type: 2}
+  - Level: 16
+    Stage: 3
+    Skin: {fileID: 11400000, guid: 5e12190e9dfbd284582923dc763b6dba, type: 2}
+  - Level: 16
+    Stage: 6
+    Skin: {fileID: 11400000, guid: baa9b43f19fcd8e45b98a936eeb3c869, type: 2}
+  - Level: 17
+    Stage: 3
+    Skin: {fileID: 11400000, guid: 277bcc4a66e506e4b8554ef678c83bcb, type: 2}
+  - Level: 17
+    Stage: 6
+    Skin: {fileID: 11400000, guid: 8ad0437618efbc34ca9203303f2e516e, type: 2}
+  SkinStage1: 3
+  SkinStage2: 6

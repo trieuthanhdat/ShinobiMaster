@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f590800ef7244ab9602476dd15df844, type: 3}
+  m_Name: LargeBlade
+  m_EditorClassIdentifier: 
+  <Id>k__BackingField: 6
+  <Name>k__BackingField: LargeBlade
+  <SkinPrefab>k__BackingField: {fileID: 5914099118766651058, guid: 73a3d3e57c871e545832661ee891e25b,
+    type: 3}
+  <Sprite>k__BackingField: {fileID: 21300000, guid: eba906e90553a5a4cb032d22e8d8065d,
+    type: 3}
+  <NotAvailableSprite>k__BackingField: {fileID: 21300000, guid: 57d55fbbb0c12984fb46d72361078432,
+    type: 3}
+  <Available>k__BackingField: 0
+  <Skipped>k__BackingField: 0
+  <ForAds>k__BackingField: 0
+  <NeedViewCount>k__BackingField: 0
+  <CurrentViewCount>k__BackingField: 0
+  <ForCoins>k__BackingField: 0
+  <Price>k__BackingField: 0
+  <VFXPrefab>k__BackingField: {fileID: 8727034169974219799, guid: 586fb38072b695c409b87c16fa647313,
+    type: 3}

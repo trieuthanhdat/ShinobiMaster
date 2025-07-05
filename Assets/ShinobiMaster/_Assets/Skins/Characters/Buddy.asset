@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 649429c483b24962bb71203933c6f23c, type: 3}
+  m_Name: Buddy
+  m_EditorClassIdentifier: 
+  <Id>k__BackingField: 1
+  <Name>k__BackingField: Buddy
+  <SkinPrefab>k__BackingField: {fileID: 919132149155446097, guid: 587f21e2811117349b5c246ab56724c4,
+    type: 3}
+  <Sprite>k__BackingField: {fileID: -683677653, guid: d1caf7d215286e841add6e1551e37e46,
+    type: 3}
+  <NotAvailableSprite>k__BackingField: {fileID: 0}
+  <Available>k__BackingField: 1
+  <Skipped>k__BackingField: 0
+  <ForAds>k__BackingField: 0
+  <NeedViewCount>k__BackingField: 0
+  <CurrentViewCount>k__BackingField: 0
+  <ForCoins>k__BackingField: 0
+  <Price>k__BackingField: 0
+  <SkinMat>k__BackingField: {fileID: 2100000, guid: ab31d0bfbab27f64690d7cdc6f28f5ba,
+    type: 2}
+  <IconSprite>k__BackingField: {fileID: 21300000, guid: 336282c70c36845418200fb0361f5dac,
+    type: 3}

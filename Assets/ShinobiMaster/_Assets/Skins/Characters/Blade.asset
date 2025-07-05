@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 649429c483b24962bb71203933c6f23c, type: 3}
+  m_Name: Blade
+  m_EditorClassIdentifier: 
+  <Id>k__BackingField: 9
+  <Name>k__BackingField: Blade
+  <SkinPrefab>k__BackingField: {fileID: 919132149155446097, guid: 6020a6a64e072074f8fe6aecb97389a9,
+    type: 3}
+  <Sprite>k__BackingField: {fileID: 21300000, guid: b205f71a7bf6fff429bb322ed7490521,
+    type: 3}
+  <NotAvailableSprite>k__BackingField: {fileID: 21300000, guid: 4f62cb0b1b455214ba3237ece07b2158,
+    type: 3}
+  <Available>k__BackingField: 0
+  <Skipped>k__BackingField: 0
+  <ForAds>k__BackingField: 0
+  <NeedViewCount>k__BackingField: 0
+  <CurrentViewCount>k__BackingField: 0
+  <ForCoins>k__BackingField: 1
+  <Price>k__BackingField: 6500
+  <SkinMat>k__BackingField: {fileID: 2100000, guid: 0ce2c3c9057fde14eb5287dffb64b5f2,
+    type: 2}
+  <IconSprite>k__BackingField: {fileID: 21300000, guid: a9f591fdeb9c2ee4b920116e4f4baebf,
+    type: 3}

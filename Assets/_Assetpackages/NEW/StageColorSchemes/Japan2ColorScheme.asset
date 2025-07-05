@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b842ee3bccf64350a798f3b46aa3c347, type: 3}
+  m_Name: Japan2ColorScheme
+  m_EditorClassIdentifier: 
+  EnvVisualType: 2
+  WallstripesMat: {fileID: 2100000, guid: 633febaf3a944634ba797f6846be8e67, type: 2}
+  WallsMat: {fileID: 2100000, guid: e40b06c88877beb408b69bb499189438, type: 2}
+  FloorMat: {fileID: 2100000, guid: 8979cd0d5227a78478a4ada6240e2876, type: 2}
+  ElevatorDoorsMat: {fileID: 2100000, guid: 399cc8de803e38148a636fc164445624, type: 2}
+  ElevatorFramesMat: {fileID: 2100000, guid: 4f95c8be642919e42b26af36eebbcfa3, type: 2}
+  BalksMat: {fileID: 2100000, guid: ebb16f4b91095b84ab07a95d536a3589, type: 2}
+  BackgroundMat: {fileID: 2100000, guid: fcead5e7748d59e4c8add3f98e431ac6, type: 2}
+  SkyboxMat: {fileID: 2100000, guid: 1aa4794382d25ab43a9adf9657fa6d2b, type: 2}
+  WindowMat: {fileID: 2100000, guid: 632afc1eef145184fb2a8c8df78fa66e, type: 2}
