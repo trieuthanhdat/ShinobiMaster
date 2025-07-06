@@ -1,6 +1,6 @@
 # This .gitignore file should be placed at the root of your Unity project directory
 #
-# Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
+# Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
 /[Ll]ibrary/
 /[Tt]emp/
@@ -14,8 +14,8 @@
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/
 
-# Asset meta data should only be ignored when the corresponding asset is also ignored
-!/[Aa]ssets/**/*.meta
+# Recordings can get excessive in size
+/[Rr]ecordings/
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # /[Aa]ssets/AssetStoreTools*
@@ -59,6 +59,7 @@ sysinfo.txt
 *.apk
 *.aab
 *.unitypackage
+*.app
 
 # Crashlytics generated file
 crashlytics-build.properties
@@ -69,13 +70,14 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
-.idea/.idea.ghost-walker/riderModule.iml
-.idea/.idea.ghost-walker/.idea/vcs.xml
-.idea/.idea.ghost-walker/.idea/workspace.xml
-.idea/.idea.ghost-walker/.idea/modules.xml
-.idea/.idea.ghost-walker/.idea/misc.xml
-.idea/.idea.ghost-walker/.idea/indexLayout.xml
-.idea/.idea.ghost-walker/.idea/encodings.xml
-.idea/.idea.ghost-walker/.idea/contentModel.xml
-Assets/ghostWalker.gw.meta
-Assets/ghostWalker.gw
+Assets/_AssetPackages/Crest/Crest-Examples/PirateCove/Props/ColonialShip/03_Models/Colonial Ship.FBX
+Assets/_AssetPackages/Crest/Crest-Examples/PirateCove/Props/Sketchfab_FREE/by_3dhdscan/stranska-rock-1/sources/stranska_skala_1_NormalsMap.png
+Assets/_AssetPackages/Crest/Crest-Examples/PirateCove/Props/Sketchfab_FREE/by_3dhdscan/stranska-rock-1/sources/stranska_skala_1_NormalsMap.png.meta
+Assets/_AssetPackages/Crest/Crest-Examples/PirateCove/Props/ColonialShip/03_Models/Colonial Ship.FBX.meta
+Assets/_AssetPackages/Crest/Crest-Examples/PirateCove/Props/Sketchfab_FREE/by_3dhdscan/stranska-rock-1/sources/stranska_skala_1_DiffuseMap.png
+Assets/_AssetPackages/Crest/Crest-Examples/PirateCove/Props/Sketchfab_FREE/by_3dhdscan/stranska-rock-1/sources/stranska_skala_1_DiffuseMap.png.meta
+
+# Ignore the specific heavy files
+Assets/ABC - Bow & Arrow/Prefabs/Animations/Ch24_nonPBR@Standing Aim Overdraw.fbx
+**/NavMesh-GameObject.asset
+Assets/ABC - Bow & Arrow/Prefabs/Characters/Player/Faith/Model/FaithModel.Fbx
