@@ -6,164 +6,158 @@ using UnityEngine.UI;
 
 public class AdLoadingPanel : MonoBehaviour
 {
-	public static AdLoadingPanel Instance { get; private set; }
+    public static AdLoadingPanel Instance { get; private set; }
 
-	[field:SerializeField]
-	public Button CloseAdButton { get; set; }
-	[field:SerializeField]
-	public string Placement { get; set; }
-		
-	private Action rewardAction;
-	private Action dismissAction;
+    [field: SerializeField]
+    public Button CloseAdButton { get; set; }
+    [field: SerializeField]
+    public string Placement { get; set; }
 
-	private IAdvertising ads;
+    private Action rewardAction;
+    private Action dismissAction;
 
-	[SerializeField] private GameObject panel;
+    private IAdvertising ads;
 
+    [SerializeField] private GameObject panel;
 
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            this.transform.SetParent(null);
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            if (Instance != this)
+            {
+                Destroy(this.gameObject);
+            }
 
+            return;
+        }
 
-	private void Awake()
-	{
-		if (Instance == null)
-		{
-			Instance = this;
-			this.transform.SetParent(null);
-			DontDestroyOnLoad(this.gameObject);
-		}
-		else 
-		{
-			if (Instance != this)
-			{
-				Destroy(this.gameObject);
-			}
-                
-			return;
-		}
-	
-		if (this.ads == null)
-		{
-			this.ads = ApplovinMaxComponent.Instance.GetComponent<IAdvertising>();
-		}
-	}
+        if (this.ads == null)
+        {
+            this.ads = AdmobComponent.Instance.GetComponent<IAdvertising>();
+        }
+    }
 
-	private void OnPanelEnable()
-	{
-		this.ads.RewardAction = this.rewardAction;
-		this.ads.DismissAction = this.dismissAction;
-		
-		if (this.ads.IsRewardedAdReady(this.Placement))
-		{
-			this.ads.ShowRewardedAd(this.Placement, this.rewardAction, this.dismissAction);
-		}
-		else
-		{
-			StartWaitingForAd();
-		}
+    private void OnPanelEnable()
+    {
+        this.ads.RewardAction = this.rewardAction;
+        this.ads.DismissAction = this.dismissAction;
 
-		if (this.CloseAdButton != null)
-		{
-			this.CloseAdButton.onClick.AddListener(HidePanel);
-		}
+        if (this.ads.IsRewardedAdReady(this.Placement))
+        {
+            this.ads.ShowRewardedAd(this.Placement, this.rewardAction, this.dismissAction);
+        }
+        else
+        {
+            StartWaitingForAd();
+        }
 
-#if  !UNITY_EDITOR && !DEVELOPMENT_BUILD
-			//Time.timeScale = 0;
+        if (this.CloseAdButton != null)
+        {
+            this.CloseAdButton.onClick.AddListener(HidePanel);
+        }
+
+#if !UNITY_EDITOR && !DEVELOPMENT_BUILD
+        //Time.timeScale = 0;  
 #endif
-	}
+    }
 
-	private void OnPanelDisable()
-	{
-		StopWaitingForAd();
-			
-		if (this.CloseAdButton != null)
-		{
-			this.CloseAdButton.onClick.RemoveListener(HidePanel);
-		}
-			
-		this.ads.RewardAction = null;
-		this.ads.DismissAction = null;
+    private void OnPanelDisable()
+    {
+        StopWaitingForAd();
 
-		this.Placement = string.Empty;
-	}
+        if (this.CloseAdButton != null)
+        {
+            this.CloseAdButton.onClick.RemoveListener(HidePanel);
+        }
 
+        this.ads.RewardAction = null;
+        this.ads.DismissAction = null;
 
-	public void SetActive(bool active, Action rewardAction = null, Action dismissAction = null)
-	{
-		this.rewardAction = rewardAction;
-		this.dismissAction = dismissAction;
+        this.Placement = string.Empty;
+    }
 
-		SetActivePanel(active);
-			
+    public void SetActive(bool active, Action rewardAction = null, Action dismissAction = null)
+    {
+        this.rewardAction = rewardAction;
+        this.dismissAction = dismissAction;
+
+        SetActivePanel(active);
+
 #if UNITY_EDITOR || DEVELOPMENT_BUILD
-		rewardAction?.Invoke();
+       rewardAction?.Invoke();  
 #endif
-	}
+    }
 
-	public void HidePanel()
-	{
-		SetActive(false);
-	}
+    public void HidePanel()
+    {
+        SetActive(false);
+    }
 
-	private void SetActivePanel(bool active)
-	{
-		this.panel.SetActive(active);
-	
-		if (active)
-		{
-			OnPanelEnable();
-		}
-		else
-		{
-			OnPanelDisable();
-		}
-	}
+    private void SetActivePanel(bool active)
+    {
+        this.panel.SetActive(active);
 
-	public void ShowInterstitialAd(string placement)
-	{
-		if (this.ads == null)
-		{
-			this.ads = FindObjectOfType<ApplovinMaxComponent>().GetComponent<IAdvertising>();
-		}
-		
-		if (this.ads.IsInterstitialAdReady(placement))
-		{
-			this.ads.ShowInterstitialAd(placement);
-		}
-	}
+        if (active)
+        {
+            OnPanelEnable();
+        }
+        else
+        {
+            OnPanelDisable();
+        }
+    }
 
-	public void ShowInterstitialAdWithDelay(string placement, float delay)
-	{
-		StartCoroutine(ShowInterstitialAdWithDelayProcess(placement, delay));
-	}
-	
-	private IEnumerator ShowInterstitialAdWithDelayProcess(string placement, float delay)
-	{
-		yield return new WaitForSeconds(delay);
-		
-		while (Pause.IsPause)
-		{
-			yield return null;
-		}
-		
-		ShowInterstitialAd(placement);
-	}
+    public void ShowInterstitialAd(string placement)
+    {
+        if (this.ads == null)
+        {
+            this.ads = FindObjectOfType<AdmobComponent>().GetComponent<IAdvertising>();
+        }
 
+        if (this.ads.IsInterstitialAdReady(placement))
+        {
+            this.ads.ShowInterstitialAd(placement);
+        }
+    }
 
+    public void ShowInterstitialAdWithDelay(string placement, float delay)
+    {
+        StartCoroutine(ShowInterstitialAdWithDelayProcess(placement, delay));
+    }
 
-	private void StartWaitingForAd()
-	{
-		MaxSdkCallbacks.OnRewardedAdLoadedEvent += OnRewardedAdLoaded;
-	}
+    private IEnumerator ShowInterstitialAdWithDelayProcess(string placement, float delay)
+    {
+        yield return new WaitForSeconds(delay);
 
-	private void StopWaitingForAd()
-	{
-		MaxSdkCallbacks.OnRewardedAdLoadedEvent -= OnRewardedAdLoaded;
-	}
+        while (Pause.IsPause)
+        {
+            yield return null;
+        }
 
-	private void OnRewardedAdLoaded(string rObj)
-	{
-		this.ads.ShowRewardedAd(this.Placement, this.rewardAction, this.dismissAction);
-			
-		StopWaitingForAd();
-	}
+        ShowInterstitialAd(placement);
+    }
+
+    private void StartWaitingForAd()
+    {
+        this.ads.RewardAction += OnRewardedAdLoaded;
+    }
+
+    private void StopWaitingForAd()
+    {
+        this.ads.RewardAction -= OnRewardedAdLoaded;
+    }
+
+    private void OnRewardedAdLoaded()
+    {
+        this.ads.ShowRewardedAd(this.Placement, this.rewardAction, this.dismissAction);
+
+        StopWaitingForAd();     
+    }
 }

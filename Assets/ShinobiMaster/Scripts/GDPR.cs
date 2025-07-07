@@ -1,57 +1,70 @@
 using System;
 using Game;
+using GoogleMobileAds.Api;
+using Unity.Services.Core;
 using UnityEngine;
 
-public class GDPR: MonoBehaviour
+public class GDPR : MonoBehaviour
 {
-	public const string GDPRAcceptedKey = "gdpr_accepted";
-	
-		
-	public bool IsGDPRAccepted
-	{
-		get => Convert.ToBoolean(PlayerPrefs.GetInt(GDPRAcceptedKey, 0));
-		set
-		{
-			PlayerPrefs.SetInt(GDPRAcceptedKey, Convert.ToInt32(value));
-			PlayerPrefs.Save();
-		}
-	}
+    public const string GDPRAcceptedKey = "gdpr_accepted";
 
-	[SerializeField] private GameObject gdprWindow;
+    public bool IsGDPRAccepted
+    {
+        get => Convert.ToBoolean(PlayerPrefs.GetInt(GDPRAcceptedKey, 0));
+        set
+        {
+            PlayerPrefs.SetInt(GDPRAcceptedKey, Convert.ToInt32(value));
+            PlayerPrefs.Save();
+        }
+    }
 
+    [SerializeField] private GameObject gdprWindow;
 
-	public void SetActiveWindow(bool state)
-	{
-		this.gdprWindow.SetActive(state);
-	}
+    private void Start()
+    {
+        // Initialize Unity Services  
+        UnityServices.InitializeAsync();
 
-	public void OnClickAcceptButton()
-	{
-		AudioManager.Instance.PlayClickButtonSound();
-	
-		AcceptGDPR();
-		SetActiveWindow(false);
-	}
+        // Initialize AdMob  
+        MobileAds.Initialize(initStatus => { });
+    }
 
-	public void OpenPrivacyPolicyLink()
-	{
-		Application.OpenURL("https://ancestralcode.vercel.app/private-policy");
-	}
+    public void SetActiveWindow(bool state)
+    {
+        this.gdprWindow.SetActive(state);
+    }
 
-	public void OpenTermOfUseLink()
-	{
-		Application.OpenURL("https://ancestralcode.vercel.app/terms-of-use");
-	}
+    public void OnClickAcceptButton()
+    {
+        AudioManager.Instance.PlayClickButtonSound();
 
-	public void AcceptGDPR()
-	{
-		if (IsGDPRAccepted)
-		{
-			return;
-		}
+        AcceptGDPR();
+        SetActiveWindow(false);
+    }
 
-		IsGDPRAccepted = true;
-		
-		MaxSdk.SetHasUserConsent(true);
-	}
+    public void OpenPrivacyPolicyLink()
+    {
+        Application.OpenURL("https://ancestralcode.vercel.app/private-policy");
+    }
+
+    public void OpenTermOfUseLink()
+    {
+        Application.OpenURL("https://ancestralcode.vercel.app/terms-of-use");
+    }
+
+    public void AcceptGDPR()
+    {
+        if (IsGDPRAccepted)
+        {
+            return;
+        }
+
+        IsGDPRAccepted = true;
+
+        // Set user consent for Unity Analytics  
+        //AnalyticsService.Instance.ProvideOptInConsent("analytics", true);
+
+        // AdMob does not have a direct API for GDPR consent,  
+        // but you can configure it via the AdMob dashboard.  
+    }
 }
